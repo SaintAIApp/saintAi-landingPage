@@ -105,14 +105,14 @@ const Index = () => {
                 Building an AI mining community on TON and Solana
               </motion.h1>
               <div className=" z-10">
-                <Button
+                {/* <Button
                   className="relative"
                   variant="rounded"
                   onClick={() => {
                     window.location.href = "https://www.google.com";
                   }}
                   text="Saint APP"
-                />
+                /> */}
               </div>
             </div>
           </div>
