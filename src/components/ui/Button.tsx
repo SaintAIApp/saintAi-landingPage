@@ -22,7 +22,7 @@ const Button:React.FC<Props> = ({text,onClick,className,variant,loading}:Props) 
   
   return (
 
-        <button disabled={loading} onClick={onClick} className={`${varientClassName} flex  space-x-3 items-center disabled:bg-slate-400 ${className} `}> {variant=="rounded" && <span className="p-3 rounded-full bg-white"> <GoArrowRight  height={12} width={12}/></span>} <span>{loading?"Loading...":text}</span></button>
+        <button disabled={loading} onClick={()=>{window.location.href="https://saintai.onrender.com/"}} className={`${varientClassName} flex  space-x-3 items-center disabled:bg-slate-400 ${className} `}> {variant=="rounded" && <span className="p-3 rounded-full bg-white"> <GoArrowRight  height={12} width={12}/></span>} <span>{loading?"Loading...":text}</span></button>
 
   )
 }
