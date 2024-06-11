@@ -107,7 +107,7 @@ const Index = () => {
                   className="relative"
                   variant="rounded"
                   onClick={() => {
-                    window.location.href = "www.google.com";
+                    window.location.href = "https://www.google.com";
                   }}
                   text="Saint APP"
                 />

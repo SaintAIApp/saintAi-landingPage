@@ -51,14 +51,13 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    <div className="bg-[#0008] px-[3vw] max-md:px-6 lg:px-[8vw] w-full fixed z-[100] py-4 backdrop-blur-3xl top-0">
+    <div className="bg-[#0008] px-[3vw] max-md:px-5 lg:px-[3vw] w-full fixed z-[100] py-4 backdrop-blur-3xl top-0">
       {isMobile ? (
         <div className="flex flex-col space-y-3">
           <div className="flex justify-between">
-            <div id="left">
+            <div id="left" className="cursor-pointer">
               <Link to={"/"}>
-                <img src={logo} className="h-5"/>
-                {/* <h1 className="font-heading text-white text-lg">  </h1> */}
+                <img src={logo} className="h-5 cursor-pointer"/>
               </Link>
             </div>
             <div id="right" className="flex items-center">
@@ -80,8 +79,10 @@ const Navbar = () => {
         </div>
       ) : (
         <div className="flex items-center justify-between">
-          <div id="left">
+          <div id="left" className="cursor-pointer">
+            <Link to={"/"}>
           <img src={logo} className="h-8"/>
+            </Link>
             {/* <h1 className="font-heading text-white text-lg">SaintAi</h1> */}
           </div>
           <div className="center">
