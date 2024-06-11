@@ -55,9 +55,11 @@ const Index = () => {
 
   return (
     <section>
+      
       <section id="home" className="relative pt-10">
+      
         <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex  items-end justify-center">
-          
+       
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
           <div id="hero" className="relative flex w-full justify-between mb-32 py-10">
             <div id="left">
@@ -86,7 +88,7 @@ const Index = () => {
                 animate="visible"
                 className="text-primary text-5xl md:text-8xl mb-10 font-heading z-10  "
               >
-                <img className="h-20 " src={logo} />
+                <img className="h-20 " loading={"lazy"} src={logo} />
               </motion.h1>
 
               <motion.h1
@@ -117,7 +119,7 @@ const Index = () => {
         </div>
         {/* Hero section  */}
         {/* <div className=" z-0 absolute h-64 w-64 bg-shape1 bottom-0 right-20"></div> */}
-        <div className=" z-0 absolute  h-64 w-64 bg-shape2 top-[-150px] left-[-25px]"></div>
+        
 
         {/* VISION SECTION */}
         <div id="vision">

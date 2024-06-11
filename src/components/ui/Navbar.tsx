@@ -5,6 +5,8 @@ import NavMenu from "../ui/NavMenu";
 import { IoMenu } from "react-icons/io5";
 
 import logo from "../../assets/saintailogo.png"
+
+import { Badge } from "./Badge";
 const Navbar = () => {
   const location = useLocation()
 
@@ -108,13 +110,7 @@ const Navbar = () => {
               >
                 <a href="/#roadmaps">Roadmaps</a>
               </li>
-              <li
-                className={
-                  currentSection === "pricing"  ? "text-primary font-bold" : ""
-                }
-              >
-                <a href="/#pricing">Pricing</a>
-              </li>
+             
               <li
                 className={
                   currentSection === "contactus"  ? "text-primary font-bold" : ""
@@ -125,7 +121,15 @@ const Navbar = () => {
             </ul>
           </div>
           <div id="right" className="flex items-center">
-            
+            <Badge text="Saint App"/>
+          {/* <Button
+                  className="relative"
+                  variant="rounded"
+                  onClick={() => {
+                    window.location.href = "https://www.google.com";
+                  }}
+                  text="Saint APP"
+                /> */}
           </div>
         </div>
       )}
