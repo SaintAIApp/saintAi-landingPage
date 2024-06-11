@@ -7,7 +7,7 @@ type Props = {
     variant:"rounded"|"primary"
     loading?:boolean
 }
-const Button:React.FC<Props> = ({text,onClick,className,variant,loading}:Props) => {
+const Button:React.FC<Props> = ({text,className,variant,loading}:Props) => {
     const getButtonClassName = (variant:string):string=>{
         switch(variant){
             case "primary":
