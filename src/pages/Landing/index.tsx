@@ -62,7 +62,7 @@ const Index = () => {
         <div className="h-[80vh] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex  items-center md:items-end justify-center">
        
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-          <div id="hero" className="relative flex w-full justify-between mb-32 py-10">
+          <div id="hero" className="relative flex w-full justify-between  py-10">
             <div id="left">
               <motion.h1
                 variants={revealVariant}
@@ -116,8 +116,8 @@ const Index = () => {
         
 
         {/* VISION SECTION */}
-        <div id="vision">
-          <h1 className="text-lg font-thin mb-5">Vision</h1>
+        <div id="vision" className="md:mt-32">
+          <h1 className="text-lg md:text-center font-thin mb-5">Vision</h1>
           <h1 className="text-3xl sm:text-center md:text-6xl font-thin">
             Prioritize technology-driven participation that rewards output
           </h1>
