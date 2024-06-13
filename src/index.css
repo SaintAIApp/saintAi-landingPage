@@ -9,6 +9,14 @@ html{
   font-family: 'RON' ;
   src: url("./assets/fonts/RON.ttf");
 }
+@font-face {
+  font-family: "UniteaSansSerifBold";
+  src: url("./assets/fonts/UniteaSans-Bold.otf");
+}
+@font-face {
+  font-family: "UniteaSansSerifMedium";
+  src: url("./assets/fonts/UniteaSans-Medium.otf");
+}
 
 .spaceGrotesk, h1,p{
   font-family: "Space Grotesk", sans-serif;

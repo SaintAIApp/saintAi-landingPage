@@ -83,7 +83,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div id="left" className="cursor-pointer">
             <Link to={"/"}>
-          <img src={logo} className="h-8"/>
+                <h1 className=" text-lg font-logoMedium">saintAI</h1>
             </Link>
             {/* <h1 className="font-heading text-white text-lg">SaintAi</h1> */}
           </div>

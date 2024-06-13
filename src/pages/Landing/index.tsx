@@ -10,6 +10,7 @@ import { revealVariant } from "../../constants/animations";
 import { useEffect, useState } from "react";
 
 import { ContactUsForm } from "../../components/ui/ContactUsForm";
+import { Badge } from "../../components/ui/Badge";
 // Define the animation variants for the mission cards
 
 const slideInVariant = {
@@ -58,7 +59,7 @@ const Index = () => {
       
       <section id="home" className="relative pt-10">
       
-        <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex  items-end justify-center">
+        <div className="h-[80vh] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex  items-center md:items-end justify-center">
        
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
           <div id="hero" className="relative flex w-full justify-between mb-32 py-10">
@@ -72,7 +73,7 @@ const Index = () => {
                 }}
                 initial="hidden"
                 animate="visible"
-                className="text-4xl md:text-6xl mb-10 font-thin"
+                className="text-4xl md:text-6xl mb-7 md:mb-10 font-thin"
               >
                 AI-driven Web3 Crypto Mine
               </motion.h1>
@@ -86,9 +87,9 @@ const Index = () => {
                 }}
                 initial="hidden"
                 animate="visible"
-                className="text-primary text-5xl md:text-8xl mb-10 font-heading z-10  "
+                className="text-primary text-5xl md:text-8xl mb-7 md:mb-10 font-heading z-10  "
               >
-                <img className="h-20 " loading={"lazy"} src={logo} />
+                <img className="h-12 md:h-20 " loading={"lazy"} src={logo} />
               </motion.h1>
 
               <motion.h1
@@ -105,14 +106,7 @@ const Index = () => {
                 Building an AI mining community on TON and Solana
               </motion.h1>
               <div className=" z-10">
-                {/* <Button
-                  className="relative"
-                  variant="rounded"
-                  onClick={() => {
-                    window.location.href = "https://www.google.com";
-                  }}
-                  text="Saint APP"
-                /> */}
+             {window.innerWidth<=768 && <Badge text="Saint App"/>}
               </div>
             </div>
           </div>

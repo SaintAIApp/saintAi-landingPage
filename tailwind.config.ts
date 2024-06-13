@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import svgToDataUri from "mini-svg-data-uri";
  
-import colors from "tailwindcss/colors";
 import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
  
 export default {
@@ -21,7 +20,9 @@ export default {
       },
       fontFamily:{
         body:["Inter"],
-        heading:["RON"]
+        heading:["RON"],
+        logo:["UniteaSansSerif"],
+        logoMedium:["UniteaSansSerifMedium"]
       },
       animation: {
         overlayShow: 'overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1)',
