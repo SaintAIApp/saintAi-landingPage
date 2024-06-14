@@ -6,7 +6,8 @@ import { IoMenu } from "react-icons/io5";
 
 import logo from "../../assets/saintailogo.png"
 
-import { Badge } from "./Badge";
+// import { Badge } from "./Badge";
+import Button from "./Button";
 const Navbar = () => {
   const location = useLocation()
 
@@ -83,7 +84,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div id="left" className="cursor-pointer">
             <Link to={"/"}>
-                <h1 className=" text-lg font-logoMedium">saintAI</h1>
+              <img src={logo} className=" h-6"/>
+                {/* <h1 className=" text-lg font-logoMedium">saintAI</h1> */}
             </Link>
             {/* <h1 className="font-heading text-white text-lg">SaintAi</h1> */}
           </div>
@@ -121,15 +123,16 @@ const Navbar = () => {
             </ul>
           </div>
           <div id="right" className="flex items-center">
-            <Badge text="Saint App"/>
-          {/* <Button
-                  className="relative"
+            {/* <Badge text="Saint App"/> */}
+          <Button
+                small
+                  className="relative py-1 px-1 text-sm"
                   variant="rounded"
                   onClick={() => {
                     window.location.href = "https://www.google.com";
                   }}
                   text="Saint APP"
-                /> */}
+                />
           </div>
         </div>
       )}

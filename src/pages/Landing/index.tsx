@@ -4,7 +4,7 @@ import {
   MissionCard,
   MissionCardWithAnimation,
 } from "../../components/ui/MissionCard";
-import logo from "../../assets/saintailogo.png";
+// import logo from "../../assets/saintailogo.png";
 import { motion } from "framer-motion";
 import { revealVariant } from "../../constants/animations";
 import { useEffect, useState } from "react";
@@ -89,7 +89,8 @@ const Index = () => {
                 animate="visible"
                 className="text-primary text-5xl md:text-8xl mb-7 md:mb-10 font-heading z-10  "
               >
-                <img className="h-12 md:h-20 " loading={"lazy"} src={logo} />
+                <h1 className="text-[40px] md:text-[60px] font-logoMedium">SaintAI</h1>
+                {/* <img className="h-12 md:h-20 " loading={"lazy"} src={logo} /> */}
               </motion.h1>
 
               <motion.h1
