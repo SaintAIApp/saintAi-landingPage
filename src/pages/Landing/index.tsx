@@ -59,9 +59,9 @@ const Index = () => {
       
       <section id="home" className="relative pt-10">
       
-        <div className="h-[80vh] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex  items-center md:items-end justify-center">
+        <div className="h-[80vh] w-full bg-black   dark:bg-grid-white/[0.2] bg-grid-white/[0.2] relative flex  items-center md:items-end justify-center">
        
-          <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+          <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
           <div id="hero" className="relative flex w-full justify-between  py-10">
             <div id="left">
               <motion.h1
