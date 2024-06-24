@@ -56,13 +56,13 @@ const Index = () => {
 
   return (
     <section>
-      
       <section id="home" className="relative pt-10">
-      
         <div className="h-[80vh] w-full bg-black   dark:bg-grid-white/[0.2] bg-grid-white/[0.2] relative flex  items-center md:items-end justify-center">
-       
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-          <div id="hero" className="relative flex w-full justify-between  py-10">
+          <div
+            id="hero"
+            className="relative flex w-full justify-between  py-10"
+          >
             <div id="left">
               <motion.h1
                 variants={revealVariant}
@@ -89,7 +89,9 @@ const Index = () => {
                 animate="visible"
                 className="text-primary text-5xl md:text-8xl mb-7 md:mb-10 font-heading z-10  "
               >
-                <h1 className="text-[40px] md:text-[60px] font-logoMedium">SaintAI</h1>
+                <h1 className="text-[40px] md:text-[60px] font-logoMedium">
+                  SaintAI
+                </h1>
                 {/* <img className="h-12 md:h-20 " loading={"lazy"} src={logo} /> */}
               </motion.h1>
 
@@ -107,14 +109,13 @@ const Index = () => {
                 Building an AI mining community on TON and Solana
               </motion.h1>
               <div className=" z-10">
-             {window.innerWidth<=768 && <Badge text="Saint App"/>}
+                {window.innerWidth <= 768 && <Badge text="Saint App" />}
               </div>
             </div>
           </div>
         </div>
         {/* Hero section  */}
         {/* <div className=" z-0 absolute h-64 w-64 bg-shape1 bottom-0 right-20"></div> */}
-        
 
         {/* VISION SECTION */}
         <div id="vision" className="md:mt-32">
@@ -126,7 +127,11 @@ const Index = () => {
           <Button
             className="my-20"
             variant="rounded"
-            onClick={() => {}}
+            onClick={() => {
+              const pdfPath =
+                import.meta.env.VITE_APP_PUBLIC_URL + "/Whitepaper-SAINTAI.pdf";
+              window.open(pdfPath, "_blank");
+            }}
             text="Whitepaper"
           />
         </div>
@@ -521,7 +526,10 @@ const Index = () => {
             }}
             text="Saint APP"
           />
-          <img className="absolute h-80 w-80  bottom-[-70%] md:top-[10%] left-1/2  md:right-0 rotate-45" src="/cube.png"/>
+          {/* <img
+            className="absolute h-80 w-80  bottom-[-70%] md:top-[10%] left-1/2  md:right-0 rotate-45"
+            src="/cube.png"
+          /> */}
         </div>
       </section>
     </section>

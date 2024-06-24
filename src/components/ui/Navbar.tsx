@@ -89,8 +89,11 @@ const Navbar = () => {
             </Link>
             {/* <h1 className="font-heading text-white text-lg">SaintAi</h1> */}
           </div>
-          <div className="center">
-            <ul className="flex md:space-x-2 px-4 py-2 rounded-full border-[0.3px] font-thin text-sm border-[#1f2550]">
+       
+          <div id="right" className="flex items-center">
+            {/* <Badge text="Saint App"/> */}
+            <div className="center">
+            <ul className="flex md:space-x-6 px-7 py-2  font-thin text-lg ">
               <li
                 className={
                   currentSection === "home"  ? "text-primary font-bold" : ""
@@ -122,8 +125,6 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div id="right" className="flex items-center">
-            {/* <Badge text="Saint App"/> */}
           <Button
                 small
                   className="relative py-1 px-1 text-sm"
