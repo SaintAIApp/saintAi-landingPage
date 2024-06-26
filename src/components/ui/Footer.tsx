@@ -24,13 +24,14 @@ const Footer = () => {
         </p>
       </div>
       <div className="md:px-5">
-        {" "}
+
         <h1 className=" font-bold">Social Media</h1>
         <ul>
-          <li className=" flex space-x-1 items-center"> <span className=" font-semibold"> Twitter</span><FaXTwitter/> </li>
-          <li className=" flex space-x-1 items-center"> <span className="font-semibold"> Telegram</span> <FaTelegramPlane/> </li>
+          <li > <a className=" flex space-x-1 items-center" href="https://x.com/saintai_io"> <span className=" font-semibold"> Twitter</span><FaXTwitter/></a> </li>
+          <li > <a className=" flex space-x-1 items-center" href="https://t.me/saintweb3portal"> <span className="font-semibold"> Telegram</span> <FaTelegramPlane/></a> </li>
           <li className="flex space-x-1 items-center"> <span className="font-semibold"> Github</span> <FaGithub/> </li>
         </ul>
+        <p className="text-sm text-slate-300">Copyright 2024 Saint-AI</p>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import Button from "../../components/ui/Button";
-import { useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import {
   MissionCard,
   MissionCardWithAnimation,
@@ -11,6 +11,8 @@ import { useEffect, useState } from "react";
 
 import { ContactUsForm } from "../../components/ui/ContactUsForm";
 import { Badge } from "../../components/ui/Badge";
+import { FaGithub, FaXTwitter } from "react-icons/fa6";
+import { FaTelegramPlane } from "react-icons/fa";
 // Define the animation variants for the mission cards
 
 const slideInVariant = {
@@ -104,13 +106,18 @@ const Index = () => {
                 }}
                 initial="hidden"
                 animate="visible"
-                className="text-3xl  mb-10 font-thin z-10"
+                className="text-3xl  mb-6 font-thin z-10"
               >
                 Building an AI mining community on TON and Solana
               </motion.h1>
               <div className=" z-10">
                 {window.innerWidth <= 768 && <Badge text="Saint App" />}
               </div>
+              <ul className="flex  space-x-4 text-2xl">
+                <li><FaGithub/></li>
+                <li><a target="_blank" href="https://x.com/saintai_io"><FaXTwitter/></a></li>
+                <li><a target="_blank" href="https://t.co/l78lYgV63A"><FaTelegramPlane/></a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -367,24 +374,14 @@ const Index = () => {
         <div className="flex flex-col space-y-10 my-3">
           <motion.div
             id="phase1"
-            className="flex flex-col space-y-2 md:flex-row md:justify-between"
+            className="flex flex-col-reverse space-y-2 md:flex-row md:justify-start"
             initial="hidden"
             whileInView="visible"
             variants={slideInVariant}
             viewport={{ once: true, amount: 0.5 }}
           >
-            <div className="left">
-              <h1 className="text-3xl">Phase 1</h1>
-              <div className="text-lg">
-                <h1 className="">S.AI.N.T-GUI Application Software</h1>
-                <h1>Soft Launch on Social Media:</h1>
-                <h1>Telegram X</h1>
-                <h1>Launch SaintAI Foundation Model:</h1>
-                <h1>Default Mode - MIA</h1>
-                <h1>Personal Mode - PAM</h1>
-              </div>
-            </div>
-            <div className="right">
+          
+            <div className="left  mr-12 md:mt-0 mt-3">
               <MissionCard
                 className={"lg:w-96"}
                 number={""}
@@ -394,43 +391,28 @@ const Index = () => {
                 }
               />
             </div>
+            <div className="right ml-3 md:ml-0 ">
+              <h1 className="text-3xl">Phase 1</h1>
+              <ul className="text-lg list-disc">
+                <li className="">S.AI.N.T-GUI Application Software</li>
+                <li>Soft Launch on Social Media:</li>
+                <li>Telegram X</li>
+                <li>Launch SaintAI Foundation Model:</li>
+                <li>Default Mode - MIA</li>
+                <li>Personal Mode - PAM</li>
+              </ul>
+            </div>
           </motion.div>
 
           <motion.div
             id="phase2"
-            className="flex flex-col md:flex-row md:justify-between space-y-2 space-x-2"
+            className="flex flex-col-reverse md:flex-row md:justify-start space-y-2 space-x-2"
             initial="hidden"
             whileInView="visible"
             variants={slideInVariant}
             viewport={{ once: true, amount: 0.5 }}
           >
-            <div className="left mx-2">
-              <h1 className="text-3xl">Phase 2</h1>
-              <div className="text-lg">
-                <h1 className="">S.AI.N.T -GUI 2.0 DApp</h1>
-                <h1>
-                  Establish partnerships to mint limited Saint Bond NFTs across
-                  multiple chains using $STT
-                </h1>
-                <h1>
-                  SaintAI 2.0 Network - A Foundation AI trained specifically off
-                  user data.
-                </h1>
-                <h1>The next phase of decentralized SLM power</h1>
-                <h1>Release the 4 Saints Automated Investment Platform:</h1>
-                <div className="my-2">
-                  <h1>SaintAI – Spot</h1>
-                  <h1>SaintAI – Option</h1>
-                  <h1>SaintAI – Bond</h1>
-                  <h1>SaintAI – Short</h1>
-                </div>
-                <h1>
-                  Establish St-Capital a peer to peer cryptocurrency funding
-                  platform for FinTech AI solution based projects using $STT
-                </h1>
-              </div>
-            </div>
-            <div className="right">
+                <div className="left mr-12 md:mt-0 mt-3">
               <MissionCard
                 className={"lg:w-96"}
                 number={""}
@@ -440,6 +422,33 @@ const Index = () => {
                 }
               />
             </div>
+            <div className="right ml-3 md:ml-0 mb-3 md:mb-0">
+              <h1 className="text-3xl ">Phase 2</h1>
+              <ul className="text-lg  list-disc">
+                <li className="">S.AI.N.T -GUI 2.0 DApp</li>
+                <li>
+                  Establish partnerships to mint limited Saint Bond NFTs across
+                  multiple chains using $STT
+                </li>
+                <li>
+                  SaintAI 2.0 Network - A Foundation AI trained specifically off
+                  user data.
+                </li>
+                <li>The next phase of decentralized SLM power</li>
+                <li>Release the 4 Saints Automated Investment Platform:</li>
+                <ul className="my-2 list-disc">
+                  <li>SaintAI – Spot</li>
+                  <li>SaintAI – Option</li>
+                  <li>SaintAI – Bond</li>
+                  <li>SaintAI – Short</li>
+                </ul>
+                <h1>
+                  Establish St-Capital a peer to peer cryptocurrency funding
+                  platform for FinTech AI solution based projects using $STT
+                </h1>
+              </ul>
+            </div>
+        
           </motion.div>
 
           <div className="relative overflow-hidden border-[1.8px] p-10 py-12 rounded-3xl border-purple_dark bg-purple bg-opacity-70 flex flex-col place-content-between">
