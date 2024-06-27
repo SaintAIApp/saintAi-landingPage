@@ -22,7 +22,7 @@ const Button: React.FC<Props> = ({
           window.open(pdfPath, "_blank");
         }
         else{
-            window.location.href="https://saintai.onrender.com/"
+            window.location.href="https://app.saintai.io/"
         }
     }
   const getButtonClassName = (variant: string): string => {
@@ -43,7 +43,7 @@ const Button: React.FC<Props> = ({
         <button
           disabled={loading}
           onClick={ () => {
-            window.location.href = "https://saintai.onrender.com/";
+            window.location.href = "https://app.saintai.io/";
           }}
           className={`${varientClassName} flex  space-x-1 items-center disabled:bg-slate-400 ${className} `}
         >
