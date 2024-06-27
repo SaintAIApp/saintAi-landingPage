@@ -27,9 +27,11 @@ const Footer = () => {
 
         <h1 className=" font-bold">Social Media</h1>
         <ul>
-          <li > <a className=" flex space-x-1 items-center" href="https://x.com/saintai_io"> <span className=" font-semibold"> Twitter</span><FaXTwitter/></a> </li>
-          <li > <a className=" flex space-x-1 items-center" href="https://t.me/saintweb3portal"> <span className="font-semibold"> Telegram</span> <FaTelegramPlane/></a> </li>
-          <li className="flex space-x-1 items-center"> <span className="font-semibold"> Github</span> <FaGithub/> </li>
+          <li > <a target="_blank" className=" relative flex space-x-1 items-center" href="https://x.com/saintai_io"> <span className=" font-semibold"> Twitter</span><FaXTwitter/></a> </li>
+
+          <li > <a target="_blank" className="relative flex space-x-1 items-center" href="https://t.me/saintweb3portal"> <span className=" font-semibold"> Telegram</span> <FaTelegramPlane/></a></li>
+
+          <li className="relative flex space-x-1 items-center"> <span className="font-semibold"> Github</span> <FaGithub/> </li>
         </ul>
         <p className="text-sm text-slate-300">Copyright 2024 Saint-AI</p>
       </div>

@@ -374,7 +374,7 @@ const Index = () => {
         <div className="flex flex-col space-y-10 my-3">
           <motion.div
             id="phase1"
-            className="flex flex-col-reverse space-y-2 md:flex-row md:justify-start"
+            className="flex flex-col space-y-2 md:flex-row md:justify-start"
             initial="hidden"
             whileInView="visible"
             variants={slideInVariant}
@@ -406,7 +406,7 @@ const Index = () => {
 
           <motion.div
             id="phase2"
-            className="flex flex-col-reverse md:flex-row md:justify-start space-y-2 space-x-2"
+            className="flex flex-col md:flex-row md:justify-start space-y-2 space-x-2"
             initial="hidden"
             whileInView="visible"
             variants={slideInVariant}
